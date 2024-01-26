@@ -8,7 +8,7 @@ int main() {
     // Create input file stream object
     ifstream fin;
     // Open the input file
-    fin.open("input.txt");
+    fin.open("primeInput.txt");
     
     // Loop until user enters a non-negative number
     while(userNum < 0) {
@@ -35,7 +35,7 @@ int main() {
     // Create ouput file stream object
     ofstream fout;
     // Open the output file
-    fout.open("output.txt");
+    fout.open("primeOutput.txt");
     
     // Output the result to the output file
     if(isPrime)
