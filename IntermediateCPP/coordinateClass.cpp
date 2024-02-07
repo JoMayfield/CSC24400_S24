@@ -44,21 +44,21 @@ void transform(Coordinate &p, int xOffset, int yOffset) {
 
 int main() {
     // Call parameterized constructor
-    Coordinate Coord1 = Coordinate(7, 8);
+    Coordinate coord1 = Coordinate(7, 8);
     // Call default constructor
-    Coordinate Coord2 = Coordinate();
+    Coordinate coord2 = Coordinate();
   
     // Notice how the function calls here differ
-    printCoordFnct(Coord1); // Standalone - pass Coord1 as parameter
-    Coord1.printCoordMethod(); // Method - Coord1 is calling object
+    printCoordFnct(coord1); // Standalone - pass coord1 as parameter
+    coord1.printCoordMethod(); // Method - coord1 is calling object
 
     // Call transform function
-    transform(Coord1, 2, 2);
+    transform(coord1, 2, 2);
   
     // Did the coordinate actually change?
     // Yes if & is present in parameter list before p (PB-Reference)
     // No otherwise (PB-Value)
-    printCoordFnct(Coord1);
+    printCoordFnct(coord1);
   
     return 0;
 }
