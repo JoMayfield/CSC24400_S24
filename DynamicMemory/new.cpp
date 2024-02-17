@@ -1,4 +1,4 @@
-// This program introduces the keyword "new"
+// This program introduces the keywords "new" and "delete"
 #include <iostream>
 using namespace std;
 
@@ -20,6 +20,13 @@ int main() {
   
   cout << *intPtr << endl; // Outputs non-sense (maybe 0, maybe not)
   cout << intPtr << endl; // Outputs the next memory address
+  
+  // Try uncommenting this
+  //delete intPtr;
+  // The reason it doesn't work is that we altered the memory address
+  //    of where intPtr was pointing, and that new memory is not ours
+  //    to free.
+  // So, because we can't delete it, we end up with a memory leak.
 
   return 0;
 }

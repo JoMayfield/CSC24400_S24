@@ -26,6 +26,8 @@ int main() {
         cout << *(arrPtr+i) << " ";
     }
     cout << endl;
+    
+    delete[] arrPtr;
 
     return 0;
 }
