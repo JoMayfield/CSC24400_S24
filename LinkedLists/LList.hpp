@@ -20,7 +20,11 @@ class LList {
     // Modifier (set)
     Node* & head() {return _head;}
     
+    // Methods to add to LL
     void addToFront(const string &newVal);
+    void addToEnd(const string &newVal);
+    
+    // Method to remove from LL
     void removeVal(const string &valToRemove);
     
     Node* findNode(const string &valToFind) const;
