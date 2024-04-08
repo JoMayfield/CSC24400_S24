@@ -16,6 +16,14 @@ class BST_Node
     
     BST_Node(int value): _data(value), _left(nullptr), _right(nullptr) {}
 
+    int data() const {return _data;} // Get (accessor)
+    int& data() {return _data;} // Set (modifier)
+    
+    BST_Node* left() const {return _left;}
+    BST_Node* &left() {return _left;}
+    
+    BST_Node* right() const {return _right;}
+    BST_Node* &right() {return _right;}
 };
 
 #endif
